@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=format-detection content="telephone=no"><link rel=icon href="favicon.png?v=1"><link rel=stylesheet href=//at.alicdn.com/t/font_708199_ib1sp5quut.css><title>NFTSwap</title><style>@media screen and (min-width: 751px) {
+      html{
+        font-size: 50px !important;
+      }
+    }
+    .loading{
+      top: 0;
+      left: 0;
+      width: 100%;
+      position: fixed;
+      height: 100%;
+      background: #f56741;
+      display: flex;
+      align-items: center;
+      color: #FFF;
+      justify-content: center;
+    }
+    /*
+ * Loading Dots
+ * Can we use pseudo elements here instead :after?
+ */
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  -webkit-animation: loading 1s infinite alternate;
+          animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #f54167;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #f541ef;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #4941f5;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #41eaf5;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #89f541;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+  background: #f58941;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}</style><link href='https://cdn.jsdelivr.net/gh/eosccc/nftswap/static/js/app.f3074cae.js' rel=preload as=script><link href='https://cdn.jsdelivr.net/gh/eosccc/nftswap/static/js/chunk-vendors.a3aef450.js' rel=preload as=script></head><body><noscript><strong>We're sorry but cccswap doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app><div class=loading><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div></div><script src='https://cdn.jsdelivr.net/gh/eosccc/nftswap/static/js/chunk-vendors.a3aef450.js'></script><script src='https://cdn.jsdelivr.net/gh/eosccc/nftswap/static/js/app.f3074cae.js'></script></body></html>
